@@ -5,17 +5,17 @@
 # TODO:
 # - runtime Requires if any
 
-%define		kdeframever	6.2
+%define		kdeframever	6.3
 %define		qtver		5.15.2
 %define		kfname		attica
 Summary:	A Qt library that implements the Open Collaboration Services API
 Name:		kf6-%{kfname}
-Version:	6.2.0
+Version:	6.3.0
 Release:	1
 License:	GPL v2+/LGPL v2.1+
 Group:		X11/Libraries
 Source0:	https://download.kde.org/stable/frameworks/%{kdeframever}/%{kfname}-%{version}.tar.xz
-# Source0-md5:	ad83f6b75eb4d6eb13fb41a9ad910e54
+# Source0-md5:	548b4791ced1ed50c361252c11d1a717
 URL:		http://www.kde.org/
 BuildRequires:	Qt6Core-devel >= %{qtver}
 BuildRequires:	Qt6Network-devel >= %{qtver}
@@ -29,7 +29,7 @@ BuildRequires:	qt6-build >= %{qtver}
 BuildRequires:	rpmbuild(macros) >= 1.736
 BuildRequires:	tar >= 1:1.22
 BuildRequires:	xz
-Obsoletes:	kf5-%{kfname} < %{version}
+#Obsoletes:	kf5-%{kfname} < %{version}
 Requires:	Qt6Core >= %{qtver}
 Requires:	Qt6Network >= %{qtver}
 Requires:	kf6-dirs
@@ -49,7 +49,7 @@ platform plugin exists in kdebase.
 Summary:	Header files for %{kfname} development
 Summary(pl.UTF-8):	Pliki nagłówkowe dla programistów używających %{kfname}
 Group:		X11/Development/Libraries
-Obsoletes:	kf5-%{kfname}-devel < %{version}
+#Obsoletes:	kf5-%{kfname}-devel < %{version}
 Requires:	%{name} = %{version}-%{release}
 Requires:	Qt6Core-devel >= %{qtver}
 Requires:	Qt6Network-devel >= %{qtver}
