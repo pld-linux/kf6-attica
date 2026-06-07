@@ -46,6 +46,16 @@ about persons and contents. The library is used in KNewStuff3 as
 content provider. In order to integrate with KDE's Plasma Desktop, a
 platform plugin exists in kdebase.
 
+%description -l pl.UTF-8
+Attica jest biblioteką Qt, która implementuje wersję 1.6 Open
+Collaboration Services. REST API jest zdefiniowane tutaj:
+<http://freedesktop.org/wiki/Specifications/open-collaboration-services-draft/>.
+
+Pozwala na łatwy dostęp do usług takich jak odpytywanie informacji o
+osobach i treściach. Biblioteka jest używana w KNewStuff3 jak dostawca
+treści. W celu integracji z pulpitem Plazmy istnieje wtyczka w
+kdebase.
+
 %package devel
 Summary:	Header files for %{kfname} development
 Summary(pl.UTF-8):	Pliki nagłówkowe dla programistów używających %{kfname}
