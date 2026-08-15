@@ -5,17 +5,17 @@
 # TODO:
 # - runtime Requires if any
 
-%define		kdeframever	6.28
+%define		kdeframever	6.29
 %define		qtver		5.15.2
 %define		kfname		attica
 Summary:	A Qt library that implements the Open Collaboration Services API
 Name:		kf6-%{kfname}
-Version:	6.28.0
+Version:	6.29.0
 Release:	1
 License:	GPL v2+/LGPL v2.1+
 Group:		X11/Libraries
 Source0:	https://download.kde.org/stable/frameworks/%{kdeframever}/%{kfname}-%{version}.tar.xz
-# Source0-md5:	3c29d65b68604ce7377461db9f3362b0
+# Source0-md5:	04136d69a5f340514fad6352629adb28
 URL:		http://www.kde.org/
 BuildRequires:	Qt6Core-devel >= %{qtver}
 BuildRequires:	Qt6Network-devel >= %{qtver}
